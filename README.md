@@ -2,7 +2,7 @@
 
 Asynchronous try-catch based on Node.JS domain module.
 
- Note: Use wisely, asynchronous exceptions may cause resource leakage [as discussed here](hhttp://stackoverflow.com/questions/15825752/why-would-an-exception-cause-resource-leaks-in-node-js})
+ Note: Use wisely, asynchronous exceptions may cause resource leakage [as discussed here](http://stackoverflow.com/questions/15825752/why-would-an-exception-cause-resource-leaks-in-node-js "Stack Overflow: Why would an exception cause resource leaks in Node.JS?")
 
 # API
 
