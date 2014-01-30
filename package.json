@@ -1,0 +1,31 @@
+{
+  "name": "atry",
+  "version": "0.0.1",
+  "description": "Asynchronous try-catch based on Node.JS domain module",
+  "main": "atry.js",
+  "scripts": {
+    "test": "mocha ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeCharmLtd/atry"
+  },
+  "keywords": [
+    "try",
+    "catch",
+    "async",
+    "asynchronous",
+    "node",
+    "domain"
+  ],
+  "author": "Damian Kaczmarek <damian@codecharm.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeCharmLtd/atry/issues"
+  },
+  "homepage": "https://github.com/CodeCharmLtd/atry",
+  "devDependencies": {
+    "mocha": "~1.17.1"
+  },
+	"engine": "node >= 0.10.2"
+}
