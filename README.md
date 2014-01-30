@@ -2,6 +2,10 @@
 
 Asynchronous try-catch based on Node.JS domain module.
 
+ Note: Use wisely, asynchronous exceptions may cause resource leakage [as discussed here](hhttp://stackoverflow.com/questions/15825752/why-would-an-exception-cause-resource-leaks-in-node-js})
+
+# API
+
 * `atry(runningFunction, [arg1, [arg2, ...]])`
  * `.catch(errorHandler)` - Catches both synchronous and asynchronous exceptions
 
