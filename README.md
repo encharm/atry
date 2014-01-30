@@ -43,3 +43,9 @@ Asynchronous try-catch based on Node.JS domain module.
       console.log("got error during file reading", err);
     }));
  ```
+
+## Author
+Damian Kaczmarek <damian@codecharm.co.uk>
+
+## Inspired by
+http://stackoverflow.com/questions/14301839/javascript-asynchronous-exception-handling-with-node-js
