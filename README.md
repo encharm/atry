@@ -9,7 +9,7 @@ Asynchronous try-catch based on Node.JS domain module.
 * `atry(runningFunction, [arg1, [arg2, ...]])`
  * `.catch(errorHandler)` - Catches both synchronous and asynchronous exceptions
 
- ```
+ ```js
   atry(function() {
     setTimeout(function() {
       throw new Error("Got error");
@@ -21,7 +21,7 @@ Asynchronous try-catch based on Node.JS domain module.
 
  * `.ignoreCatch(errorHandler)` - Ignores both synchronous and asynchronous exceptions
 
- ```
+ ```js
   atry(function() {
     setTimeout(function() {
       throw new Error("Got error");
@@ -30,7 +30,7 @@ Asynchronous try-catch based on Node.JS domain module.
  ```
 
 * `atry.bind(bindFunction).catch(catchFunction)` - Returns function that will be exception safe
- ```
+ ```js
     fs.readFile('someFile', atry.intercept(function(err, data) {
       if(err) throw err; // this will be caught below
       console.log("Got data");
@@ -40,7 +40,7 @@ Asynchronous try-catch based on Node.JS domain module.
   ```
 
 * `atry.intercept(bindFunction).catch(catchFunction)` - Returns function that will be exception safe and its first argument will be handled as if it is `err`. 
- ```
+ ```js
     fs.readFile('someFile', atry.intercept(function(data) {
       console.log("Got data");
     }).catch(function(err) {
