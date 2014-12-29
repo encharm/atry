@@ -49,7 +49,7 @@ Asynchronous try-catch based on Node.JS domain module.
  ```
 
 ## Author
-Damian Kaczmarek <damian@codecharm.co.uk>
+Damian Kaczmarek <rush@rushbase.net>
 
 ## Inspired by
 http://stackoverflow.com/questions/14301839/javascript-asynchronous-exception-handling-with-node-js
